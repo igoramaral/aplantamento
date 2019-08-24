@@ -1,4 +1,4 @@
-#!/home/pi/dev/aplantamento/bin/python3
+#!/home/igor/dev/aplantamento/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -1,4 +1,4 @@
-#!/home/pi/dev/aplantamento/bin/python
+#!/home/igor/dev/aplantamento/bin/python
 
 import sys
 import getopt

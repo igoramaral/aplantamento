@@ -25,7 +25,7 @@ SECRET_KEY = '88dc(ce*%d5sc!@^qp#84q&-dd(%ff2r*6b8^r+!f2v&%3)i9$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.108','shimes.dlinkddns.com']
+ALLOWED_HOSTS = ['192.168.0.108','shimes.dlinkddns.com','127.0.0.1']
 
 
 # Application definition
