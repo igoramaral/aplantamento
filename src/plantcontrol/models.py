@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 
@@ -25,7 +26,7 @@ class Medicao(models.Model):
     dataMedicao = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        data = self.dataMedicao.strftime("%d/%m/%y %H:%M")
+        data = timezone.localtime(self.dataMedicao).strftime("%d/%m/%y %H:%M")
         return "Medição de " + data
 
     class Meta:
@@ -37,5 +38,5 @@ class Rega(models.Model):
     dataRega = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        data = self.dataRega.strftime("%d/%m/%y %H:%M")
+        data = timezone.localtime(self.dataRega).strftime("%d/%m/%y %H:%M")
         return "Rega de " + data
